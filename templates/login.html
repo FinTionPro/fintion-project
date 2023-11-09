@@ -10,31 +10,26 @@
 
 </head>  
 <body>
- <form class="formulario">
+    <form class="formulario" method="post" action="../src/login.php">
     
-    <h1>Registrate</h1>
+    <h1>login</h1>
      <div class="contenedor">
-     
-     <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" placeholder="Nombre Completo">
-         
-         </div>
          
          <div class="input-contenedor">
          <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico">
+         <input type="text" placeholder="Usuario" name="usuario">
          
          </div>
+         
          
          <div class="input-contenedor">
         <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
+         <input type="password" placeholder="Contraseña" name="contraseña">
          
          </div>
-         <input type="submit" value="Registrate" class="button">
+         <input type="submit" value="Login" class="button">
          
-         <p>¿Ya tienes una cuenta?<a class="link" href="loginvista.html">Iniciar Sesion</a></p>
+         <p>¿No tienes una cuenta? <a class="link" href="register.html">Registrate </a></p>
      </div>
     </form>
 </body>
