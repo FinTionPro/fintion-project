@@ -1,15 +1,13 @@
 <?php
 session_start();
 
-// Incluye el archivo de conexión a la base de datos
-include('conexion.php');
+include('config/conexion.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre_usuario = $_POST["usuario"];
     $contrasena = $_POST["contraseña"];
 
-    // Realiza una consulta SQL para verificar las credenciales
-    $sql = "SELECT id, nombre FROM usuarios WHERE nombre = ? AND contrasena = ?";
+    $sql = "SELECT id, nombre FROM usuario WHERE nombre = ? AND contrasena = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ss", $nombre_usuario, $contrasena);
     $stmt->execute();
@@ -21,9 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["id"] = $row["id"];
         $_SESSION["nombre_usuario"] = $row["nombre_usuario"];
         
-        header("Location: home.php"); // Redirige a la página de inicio de sesión exitoso
+        header("Location: ../templates/home.html");
     } else {
-        // Credenciales inválidas, muestra un mensaje de error
         echo "Credenciales inválidas. Inténtalo de nuevo.";
     }
 
