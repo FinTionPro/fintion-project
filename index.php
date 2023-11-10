@@ -1,4 +1,4 @@
 <?php
-    header("Location: templates/home.html");
+    header("Location: templates/login.html");
     exit;
 ?>
