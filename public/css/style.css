@@ -88,8 +88,8 @@ p {
 
 /* Home */
 
-a {
-    color: fff;
+nav {
+    border-bottom: 1px solid #fff;
 }
 
 .card {
