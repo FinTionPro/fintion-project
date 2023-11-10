@@ -1,0 +1,46 @@
+/* botones */
+a{
+    text-decoration: none;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.bottons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* tabla */
+
+#active{
+    background-color: rgb(80, 194, 95);
+}
+
+#card1 {
+    text-align: center;
+}
+
+#tabla {
+    margin-top: 40px;
+    /* margin-left: 150px; */
+    width: 400px;
+}
+
+/* resultado */
+
+#card2, #cuentas {
+    text-align: center;
+}
+
+#tabla2{
+    width: 400px;
+    margin-left: 80px;
+    margin-top: -45px;
+}
