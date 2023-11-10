@@ -1,15 +1,21 @@
+body{
+    background-color: #1A2835;
+}
 /* botones */
+
 a{
     text-decoration: none;
 }
 
 .card-title {
     text-align: center;
+    color: black;
 }
 
 .card {
     display: inline-block;
     margin-right: 20px;
+    background-color: #cac9c9;
 }
 
 .bottons {
@@ -20,7 +26,7 @@ a{
 /* tabla */
 
 #active{
-    background-color: rgb(80, 194, 95);
+    background-color: rgb(70, 156, 151);
 }
 
 #card1 {
