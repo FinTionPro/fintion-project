@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Sistema de Gesión de Finanzas Personales" company="" webLink="http://" view-date="2023-08-07" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3230" locale="es_ES">
+<?xml version="1.0" encoding="UTF-8"?><project name="Sistema de Gesión de Finanzas Personales" company="" webLink="http://" view-date="2023-08-06" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3230" locale="es_AR">
     <description/>
     <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd3" name="Nombre" width="200" order="0"/>
-        <field id="tpd4" name="Fecha de inicio" width="75" order="1"/>
-        <field id="tpd5" name="Fecha de fin" width="75" order="2"/>
+        <field id="tpd3" name="Name" width="200" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="color.recent">
             <![CDATA[#ff3333 #ccccff #006666 #ffff00 #cccc00]]>
         </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nombre" width="210" order="0"/>
-        <field id="1" name="Función" width="86" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>

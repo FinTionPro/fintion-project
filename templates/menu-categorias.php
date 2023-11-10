@@ -12,7 +12,7 @@
     </div>
     <div class="cards-container">
         <div class="card" id="card1">Ingresos</div>
-        <div class="card" id="card2">Gastos</div>
+        <div class="card" id="card2">Egresos</div>
     </div>
     <div class="cards-container2">
         <div class="card" id="addCategory1" onclick="toggleForm('formContainer1', 'addCategory1')">Agregar categoria</div>
@@ -41,8 +41,8 @@
         </form>
     </div>
     <div class="cards-container3">
-        <div class="cards" id="cardsContainer3"></div>
-        <div class="cards" id="cardsContainer3"></div>
+        <div class="cards" id="cardsContainer3"><?php include("../src/categoria.php") ?></div>
+        <div class="cards" id="cardsContainer3"><?php include("../src/categoria_egreso.php") ?></div>
     </div>
     <script src="../public/js/script.js"></script>
 </body>
