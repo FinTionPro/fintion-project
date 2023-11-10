@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../public/css/style.css">
+<title>FinTion</title>
+</head>
+<body>
+    <div class="navbar">
+        <p class="navbar-icon">FinTion</p>
+    </div>
+    <div class="cards-container">
+        <div class="card" id="card1">Ingresos</div>
+        <div class="card" id="card2">Gastos</div>
+    </div>
+    <div class="cards-container2">
+        <div class="card" id="addCategory1" onclick="toggleForm('formContainer1', 'addCategory1')">Agregar categoria</div>
+        <div class="card" id="addCategory2" onclick="toggleForm('formContainer2', 'addCategory2')">Agregar categoria</div>
+    </div>
+    <div class="form-container" id="formContainer1" style="display: none;">
+        <form class="form" onsubmit="addToCardsContainer(event, 'card1')">
+            <div class="form-content">
+                <input type="text" placeholder="Categoria" name="categoria">
+                <br><br>
+                <input type="text" placeholder="Descripción" name="descripcion">
+                <br><br>
+                <input type="submit" value="Añadir">
+            </div>
+        </form>
+    </div>
+    <div class="form-container" id="formContainer2" style="display: none;">
+        <form class="form" onsubmit="addToCardsContainer(event, 'card2')">
+            <div class="form-content">
+                <input type="text" placeholder="Categoria" name="categoria">
+                <br><br>
+                <input type="text" placeholder="Descripción" name="descripcion">
+                <br><br>
+                <input type="submit" value="Añadir">
+            </div>
+        </form>
+    </div>
+    <div class="cards-container3">
+        <div class="cards" id="cardsContainer3"></div>
+        <div class="cards" id="cardsContainer3"></div>
+    </div>
+    <script src="../public/js/script.js"></script>
+</body>
+</html>
