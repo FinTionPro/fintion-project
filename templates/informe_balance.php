@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informe Ingresos - FinTion</title>
+    <title>Informe Balance - FinTion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="../public/css/informe.css">
@@ -49,7 +49,7 @@
     <!-- botones de coso -->
     <HEader class="bottons">
         <div class="card" style="width: 18rem;">
-            <a href="informe_ingreso.html" class="cen">
+            <a href="informe_ingresos.php" class="cen">
                 <div class="card-body">
                     <h5 class="card-title">
                         Ingresos
@@ -58,8 +58,8 @@
             </a>
         </div>
 
-        <div class="card" id="active" style="width: 18rem;">
-            <a href="#" class="cen">
+        <div class="card" style="width: 18rem;">
+            <a href="informe_egresos.php" class="cen">
                 <div class="card-body">
                     <h5 class="card-title">
                         Egresos
@@ -68,8 +68,8 @@
             </a>
         </div>
 
-        <div class="card" style="width: 18rem;">
-            <a href="informe_balance.html" class="cen">
+        <div class="card" id="active" style="width: 18rem;">
+            <a href="#" class="cen">
                 <div class="card-body">
                     <h5 class="card-title">
                         Balance
@@ -84,22 +84,20 @@
         style="margin: auto; text-align: center; max-width: 960px;">
         <div class="card" id="tabla">
             <div class="card-header" id="card1">
-                Egresos y Categoria
+                Balance Diario
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">masi se coje al de a bajo</li>
-                <li class="list-group-item">nahu</li>
-                <li class="list-group-item">A third item</li>
+            <?php include("../src/INFO_BALANCE.php"); ?>
             </ul>
         </div>
 
         <!-- resultado -->
         <div class="card" id="tabla2">
             <div class="card-header" id="card2">
-                Total de Egresos
+                Balance Mensual
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="cuentas"> $ 0.00</li>
+            <li class="list-group-item" id="cuentas"> $ <?php echo number_format($balanceMensual, 2); ?></li>
             </ul>
         </div>
     </div>

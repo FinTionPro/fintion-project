@@ -59,7 +59,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <a href="informe_egresos.html" class="cen">
+            <a href="informe_egresos.php" class="cen">
                 <div class="card-body">
                     <h5 class="card-title">
                         Egresos
@@ -69,7 +69,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <a href="informe_balance.html" class="cen">
+            <a href="informe_balance.php" class="cen">
                 <div class="card-body">
                     <h5 class="card-title">
                         Balance
@@ -87,9 +87,7 @@
                 Ingresos y Categoria
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">masi se coje al de a bajo</li>
-                <li class="list-group-item">nahu</li>
-                <li class="list-group-item">A third item</li>
+                <?php include("../src/informe_ingreso.php"); ?>
             </ul>
         </div>
 
@@ -99,7 +97,7 @@
                 Total de Ingresos
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="cuentas"> $ 0.00</li>
+            <li class="list-group-item" id="cuentas"> $ <?php echo number_format($totalIngresos, 2); ?></li>
             </ul>
         </div>
     </div>
