@@ -1,12 +1,14 @@
+body {
+    background-color: #1A2835;
+}
 
-
-
+.card {
+    width: 300px;
+}
 
 /*:::Boton-Modal:::*/
 .boton-modal{
     padding: 40px;
-    
-    background-color: #fff;
 }
 .boton-modal label{
     padding: 5px 50px;

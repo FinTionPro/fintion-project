@@ -9,75 +9,73 @@
   <meta>
   <title>Document</title>
   <link href="ruta/a/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
- 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Informe</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Categoria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Presupuesto</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              cosas
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">no se q va</a></li>
-              <li><a class="dropdown-item" href="#">no se q va</a></li>
-              <li><a class="dropdown-item" href="#">no se q va</a></li>
-            </ul>
-          </li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="home.html" style="color: #fff;">FinTion</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon hamburguer"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff;">Informe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff;">Categoria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="presupuesto.html" style="color: #fff;">Presupuesto</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff;">Usuario</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container d-flex flex-column align-items-center justify-content-center" style="margin-top: 200px;">
+    <div class="container d-flex justify-content-between" style="margin: auto; text-align: center;">
+      <div class="card" id="tabla">
+        <div class="card-header" id="card1">
+          Historial
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">1</li>
+          <li class="list-group-item">2</li>
         </ul>
-      </div>
-    </div>
-  </nav>
- 
-    <div class="container d-flex justify-content-between"
-    style="margin: auto; text-align: center; max-width: 960px;">
-    <div class="card" id="tabla">
-      <div class="card-header" id="card1">
-        Historial
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">santy se coje al de a bajo</li>
-        <li class="list-group-item">nahu</li>
-        <li class="list-group-item">A third item</li>
-      </ul>
-      
-    </div>
-    <div class="boton-modal">
-      <label for="btn-modal">
-        Crear Presupusto
-      </label>
-    </div>
 
+      </div>
+      <div class="boton-modal">
+        <label for="btn-modal">
+          Crear Presupusto
+        </label>
+      </div>
+
+    </div>
   </div>
-  
-  
-  <!--Boton-->
-  
-  
 
-  
+  <!--Boton-->
+
+
+
+
   <!--Fin de Boton-->
   <!--Ventana Modal-->
   <input type="checkbox" id="btn-modal">
@@ -86,12 +84,13 @@
       Monto:<input type="number"> <br>
       Categoria:<input type="text"><br>
       Fecha:<input type="date">
+      
 
       <div class="btn-cerrar">
+        <input type="submit" value="Enviar" class="btn-modal">
         <label for="btn-modal">Cerrar</label>
       </div>
     </div>
-    <label for="btn-modal" class="cerrar-modal"></label>
   </div>
   <!--Fin de Ventana Modal-->
   <!-- Contenido de tu sitio web -->
