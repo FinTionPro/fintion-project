@@ -11,19 +11,19 @@ function toggleForm(formContainerId, buttonId) {
   }
 }
 
-function addToCardsContainer(event, containerId) {
-  event.preventDefault();
-  const form = event.target;
-  const categoria = form.categoria.value;
-  const descripcion = form.descripcion.value;
-  const cardsContainer = document.getElementById(containerId === 'card1' ? 'cardsContainer3' : 'cardsContainer3');
-  const newCard = document.createElement('div');
-  newCard.classList.add('cards');
-  newCard.innerText = `Categoría: ${categoria}\nDescripción: ${descripcion}`;
-  cardsContainer.appendChild(newCard);
-  form.reset();
-  form.style.display = 'none';
-}
+// function addToCardsContainer(event, containerId) {
+//   event.preventDefault();
+//   const form = event.target;
+//   const categoria = form.categoria.value;
+//   const descripcion = form.descripcion.value;
+//   const cardsContainer = document.getElementById(containerId === 'card1' ? 'cardsContainer3' : 'cardsContainer3');
+//   const newCard = document.createElement('div');
+//   newCard.classList.add('cards');
+//   newCard.innerText = `Categoría: ${categoria}\nDescripción: ${descripcion}`;
+//   cardsContainer.appendChild(newCard);
+//   form.reset();
+//   form.style.display = 'none';
+// }
 
 /*
 

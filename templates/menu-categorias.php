@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../public/css/style.css">
+<link rel="stylesheet" href="../public/css/style-facu.css">
 <title>FinTion</title>
 </head>
 <body>
@@ -19,22 +19,22 @@
         <div class="card" id="addCategory2" onclick="toggleForm('formContainer2', 'addCategory2')">Agregar categoria</div>
     </div>
     <div class="form-container" id="formContainer1" style="display: none;">
-        <form class="form" onsubmit="addToCardsContainer(event, 'card1')">
+        <form class="form" method="post" action="../src/categoria.php">
             <div class="form-content">
-                <input type="text" placeholder="Categoria" name="categoria">
+                <input type="text" placeholder="Categoria" name="categoria-ingreso">
                 <br><br>
-                <input type="text" placeholder="Descripción" name="descripcion">
+                <input type="text" placeholder="Descripción" name="descripcion-ingreso">
                 <br><br>
                 <input type="submit" value="Añadir">
             </div>
         </form>
     </div>
     <div class="form-container" id="formContainer2" style="display: none;">
-        <form class="form" onsubmit="addToCardsContainer(event, 'card2')">
+         <form class="form" method="post" action="../src/categoria_egreso.php">
             <div class="form-content">
-                <input type="text" placeholder="Categoria" name="categoria">
+                <input type="text" placeholder="Categoria" name="categoria-egreso">
                 <br><br>
-                <input type="text" placeholder="Descripción" name="descripcion">
+                <input type="text" placeholder="Descripción" name="descripcion-egreso">
                 <br><br>
                 <input type="submit" value="Añadir">
             </div>
