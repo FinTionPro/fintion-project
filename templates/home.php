@@ -54,7 +54,7 @@
         <div class="row align-items-center">
           <div class="col-md-8">
             <div class="card-body">
-              <p class="card-text">$ 0,00</p>
+              <p class="card-text">$<?php include("../src/ingresos.php") ?></p>
             </div>
           </div>
 
@@ -76,7 +76,7 @@
         <div class="row align-items-center">
           <div class="col-md-8">
             <div class="card-body">
-              <p class="card-text">$ 0,00</p>
+              <p class="card-text">$<?php include("../src/egresos.php") ?></p>
             </div>
           </div>
 
@@ -99,7 +99,7 @@
         <div class="row align-items-center">
           <div class="col-md-8">
             <div class="card-body">
-              <p class="card-text">$ 0,00</p>
+              <p class="card-text">$ <?php include("../src/balance.php") ?></p>
             </div>
           </div>
 

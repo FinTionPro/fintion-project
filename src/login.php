@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["id"] = $row["id"];
         $_SESSION["nombre_usuario"] = $row["nombre_usuario"];
         
-        header("Location: ../templates/home.html");
+        header("Location: ../templates/home.php");
     } else {
         echo "Credenciales inválidas. Inténtalo de nuevo.";
     }
