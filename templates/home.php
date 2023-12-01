@@ -14,7 +14,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="home.html" style="color: #fff;">FinTion</a>
+        <a class="navbar-brand logo" href="home.php" style="color: #fff;">FinTion</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon hamburguer"></span>
@@ -29,7 +29,7 @@
               <a class="nav-link" href="menu-categorias.php" style="color: #fff;">Categoria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="presupuesto.html" style="color: #fff;">Presupuesto</a>
+              <a class="nav-link" href="presupuesto.php" style="color: #fff;">Presupuesto</a>
             </li>
           </ul>
         </div>
