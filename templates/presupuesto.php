@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <form action="../src/conexion-presupuesto.php"></form>
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -57,8 +58,7 @@
           Historial
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">1</li>
-          <li class="list-group-item">2</li>
+          <?php include("../src/conexion-presupuesto.php")?>
         </ul>
 
       </div>
