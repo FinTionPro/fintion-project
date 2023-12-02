@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: #fff;">Informe</a>
+              <a class="nav-link" href="informe_ingresos.php" style="color: #fff;">Informe</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="menu-categorias.php" style="color: #fff;">Categoria</a>
@@ -64,8 +64,32 @@
         </div>
 
         <div class="card-footer">
-          <button class="btn btn-primary">Añadir Ingresos</button>
+          <button class="btn btn-primary">
+            <label for="btn-modal">
+            Añadir Ingresos
+            </label>
+          </button>
         </div>
+
+        <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+          <div class="content-modal">
+            <form action="../src/ingresos.php" method="post">
+            Monto:<input type="number" name="monto"> <br>
+            Categoria:<input type="number" name="categoria"><br>
+            Descripción:<input type="text" name="descripcion"><br>
+
+            <input type="submit" value="Enviar" class="btn-modal">
+
+            <div class="btn-cerrar">
+            <label for="btn-modal">Cerrar</label>
+          </div>
+            </form>
+      
+
+            
+        </div>
+      </div>
       </div>
 
       <!-- Card -->
@@ -86,8 +110,30 @@
         </div>
 
         <div class="card-footer">
-          <button class="btn btn-primary">Añadir Egresos</button>
+        <button class="btn btn-primary">
+            <label for="btn-modal2">
+            Añadir Ingresos
+            </label>
+          </button>
         </div>
+
+        <input type="checkbox" id="btn-modal2">
+        <div class="container-modal">
+          <div class="content-modal">
+            <form action="egresos.php" method="post">
+            Monto:<input type="number"> <br>
+            Categoria:<input type="text"><br>
+            Fecha:<input type="date">
+            </form>
+            
+      
+
+            <div class="btn-cerrar">
+            <input type="submit" value="Enviar" class="btn-modal">
+            <label for="btn-modal">Cerrar</label>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
     <div class="container d-flex align-items-center justify-content-center second-info" style="margin: auto;">

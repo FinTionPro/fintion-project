@@ -7,7 +7,7 @@ $result = $conn->query($query);
 if ($result->num_rows > 0) {
     echo "<ul class='list-group list-group-flush'>";
     while ($row = $result->fetch_assoc()) {
-        echo $row["nombre"] . " - " . $row["descripcion"];
+        echo $row["nombre"] . " - " . $row["descripcion"] . "<br>";
     }
     echo "</ul>";
 } else {
@@ -34,6 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Ejecutar la consulta
     if ($stmt->execute()) {
         echo "Registro agregado correctamente";
+        header("Location: ../templates/menu-categorias.php");
+        exit();
     } else {
         echo "Error al agregar el registro: " . $stmt->error;
     }

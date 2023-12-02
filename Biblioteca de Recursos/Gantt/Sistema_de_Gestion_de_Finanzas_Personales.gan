@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Sistema de Gesión de Finanzas Personales" company="" webLink="http://" view-date="2023-08-06" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3230" locale="es_AR">
+<?xml version="1.0" encoding="UTF-8"?><project name="Sistema de Gesión de Finanzas Personales" company="" webLink="http://" view-date="2023-07-31" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3230" locale="es_ES">
     <description/>
     <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd3" name="Name" width="200" order="0"/>
-        <field id="tpd4" name="Begin date" width="75" order="1"/>
-        <field id="tpd5" name="End date" width="75" order="2"/>
+        <field id="tpd3" name="Nombre" width="200" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="75" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="75" order="2"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="color.recent">
             <![CDATA[#ff3333 #ccccff #006666 #ffff00 #cccc00]]>
         </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="210" order="0"/>
-        <field id="1" name="Default role" width="86" order="1"/>
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -37,7 +37,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="general" color="#ffff00" meeting="false" start="2023-04-28" duration="146" complete="0" thirdDate="2023-04-28" thirdDate-constraint="0" expand="true">
+        <task id="0" name="general" color="#ffff00" meeting="false" start="2023-04-28" duration="156" complete="0" thirdDate="2023-04-28" thirdDate-constraint="0" expand="true">
             <task id="1" name="Análisis" color="#ccccff" meeting="false" start="2023-04-28" duration="55" complete="0" thirdDate="2023-03-23" thirdDate-constraint="0" expand="true">
                 <depend id="2" type="2" difference="0" hardness="Strong"/>
                 <depend id="3" type="2" difference="0" hardness="Strong"/>
@@ -70,9 +70,9 @@
                     <task id="17" name="División de tareas y roles" color="#8cb6ce" meeting="false" start="2023-06-23" duration="15" complete="0" thirdDate="2023-06-16" thirdDate-constraint="0" expand="true"/>
                 </task>
             </task>
-            <task id="2" name="Diseño" color="#ccccff" meeting="false" start="2023-07-24" duration="59" complete="0" thirdDate="2023-03-15" thirdDate-constraint="0" expand="true">
+            <task id="2" name="Diseño" color="#ccccff" meeting="false" start="2023-07-24" duration="74" complete="0" thirdDate="2023-03-15" thirdDate-constraint="0" expand="true">
                 <depend id="3" type="2" difference="0" hardness="Strong"/>
-                <task id="6" name="Iteraciones para la liberación de la primera versión" color="#ff3333" meeting="false" start="2023-07-24" duration="59" complete="0" thirdDate="2023-07-07" thirdDate-constraint="0" expand="true">
+                <task id="6" name="Iteraciones para la liberación de la primera versión" color="#ff3333" meeting="false" start="2023-07-24" duration="74" complete="0" thirdDate="2023-07-07" thirdDate-constraint="0" expand="true">
                     <task id="18" name="Prototipo Etapa 1" color="#000000" meeting="false" start="2023-07-24" duration="15" complete="0" thirdDate="2023-07-24" thirdDate-constraint="0" expand="false">
                         <notes>
                             <![CDATA[Se toma como la primer etapa del prototipo la creación de todos los diagramas tando de BD, como de Casos de Uso, etc. En el desarrollo se crean y diseñan los diagramas mientras que en la iteración se toma como la puesta en común de lo que se realizó en la etapa de desarrollo y la correción de errores o acuerdos.]]>
@@ -89,37 +89,37 @@
                         <task id="21" name="Desarrollo" color="#8cb6ce" meeting="false" start="2023-08-14" duration="10" complete="0" thirdDate="2023-08-22" thirdDate-constraint="0" expand="true"/>
                         <task id="39" name="Iteración" color="#8cb6ce" meeting="false" start="2023-08-14" duration="15" complete="0" thirdDate="2023-06-23" thirdDate-constraint="0" expand="true"/>
                     </task>
-                    <task id="32" name="Prototipo Etapa 3 (Final)" color="#000000" meeting="false" start="2023-09-08" duration="25" complete="0" thirdDate="2023-06-23" thirdDate-constraint="0" expand="false">
+                    <task id="32" name="Prototipo Etapa 3 (Final)" color="#000000" meeting="false" start="2023-09-08" duration="40" complete="0" thirdDate="2023-06-23" thirdDate-constraint="0" expand="false">
                         <notes>
                             <![CDATA[Se toma como la tercer etapa del prototipo a darle funcionalidad a todo lo anterior para que ya se convierta en un prototipo funcional del sistema. En el desarrollo se le da funcionalidad como conexión con el backend, levantar la aplicación al servidor, etc mientras que en la iteración se toma como la puesta en común de lo que se realizó en la etapa de desarrollo, testeo del prototipo funcional y arreglo de errores o acuerdos.]]>
                         </notes>
-                        <task id="33" name="Desarrollo" color="#8cb6ce" meeting="false" start="2023-09-08" duration="10" complete="0" thirdDate="2023-09-27" thirdDate-constraint="0" expand="true"/>
-                        <task id="35" name="Iteración" color="#8cb6ce" meeting="false" start="2023-09-22" duration="15" complete="0" thirdDate="2023-06-23" thirdDate-constraint="0" expand="true"/>
+                        <task id="33" name="Desarrollo" color="#8cb6ce" meeting="false" start="2023-09-08" duration="15" complete="0" thirdDate="2023-09-27" thirdDate-constraint="0" expand="true"/>
+                        <task id="35" name="Iteración" color="#8cb6ce" meeting="false" start="2023-09-29" duration="25" complete="0" thirdDate="2023-06-23" thirdDate-constraint="0" expand="true"/>
                     </task>
                 </task>
             </task>
-            <task id="3" name="Implementación" color="#ccccff" meeting="false" start="2023-10-13" duration="26" complete="0" thirdDate="2023-03-02" thirdDate-constraint="0" expand="true">
-                <task id="7" name="Puesta en Producción" color="#ff3333" meeting="false" start="2023-10-13" duration="21" complete="0" thirdDate="2023-08-30" thirdDate-constraint="0" expand="false">
+            <task id="3" name="Implementación" color="#ccccff" meeting="false" start="2023-11-03" duration="21" complete="0" thirdDate="2023-03-02" thirdDate-constraint="0" expand="true">
+                <task id="7" name="Puesta en Producción" color="#ff3333" meeting="false" start="2023-11-03" duration="20" complete="0" thirdDate="2023-08-30" thirdDate-constraint="0" expand="false">
                     <depend id="8" type="2" difference="0" hardness="Strong"/>
-                    <task id="42" name="Desarrollo" color="#8cb6ce" meeting="false" start="2023-10-13" duration="10" complete="0" thirdDate="2023-10-13" thirdDate-constraint="0" expand="true">
+                    <task id="42" name="Desarrollo" color="#8cb6ce" meeting="false" start="2023-11-03" duration="10" complete="0" thirdDate="2023-10-13" thirdDate-constraint="0" expand="true">
                         <notes>
                             <![CDATA[Llevar a cabo la transformación de prototipo no funcional a funcional]]>
                         </notes>
                         <depend id="44" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="44" name="Iteración 1" color="#8cb6ce" meeting="false" start="2023-10-27" duration="5" complete="0" thirdDate="2023-10-13" thirdDate-constraint="0" expand="true">
+                    <task id="44" name="Iteración 1" color="#8cb6ce" meeting="false" start="2023-11-17" duration="5" complete="0" thirdDate="2023-10-13" thirdDate-constraint="0" expand="true">
                         <depend id="47" type="2" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="47" name="Iteración 2" color="#8cb6ce" meeting="false" start="2023-11-03" duration="5" complete="0" thirdDate="2023-10-13" thirdDate-constraint="0" expand="true"/>
+                    <task id="47" name="Iteración 2" color="#8cb6ce" meeting="false" start="2023-11-24" duration="5" complete="0" thirdDate="2023-10-13" thirdDate-constraint="0" expand="true"/>
                     <task id="45" name="Producto Final" meeting="false" start="2023-11-10" duration="1" complete="0" expand="false">
                         <task id="46" name="Liberación" color="#8cb6ce" meeting="false" start="2023-11-10" duration="1" complete="0" thirdDate="2023-10-13" thirdDate-constraint="0" expand="true"/>
                     </task>
                 </task>
-                <task id="8" name="Mantenimiento" color="#ff3333" meeting="false" start="2023-11-17" duration="1" complete="0" thirdDate="2023-08-23" thirdDate-constraint="0" expand="false">
-                    <task id="29" name="Retroalimentación" color="#8cb6ce" meeting="false" start="2023-11-17" duration="1" complete="0" thirdDate="2023-11-13" thirdDate-constraint="0" expand="true"/>
-                    <task id="31" name="Actualización" color="#8cb6ce" meeting="false" start="2023-11-17" duration="1" complete="0" thirdDate="2023-11-13" thirdDate-constraint="0" expand="true"/>
+                <task id="8" name="Mantenimiento" color="#ff3333" meeting="false" start="2023-12-01" duration="1" complete="0" thirdDate="2023-08-23" thirdDate-constraint="0" expand="false">
+                    <task id="29" name="Retroalimentación" color="#8cb6ce" meeting="false" start="2023-12-01" duration="1" complete="0" thirdDate="2023-11-13" thirdDate-constraint="0" expand="true"/>
+                    <task id="31" name="Actualización" color="#8cb6ce" meeting="false" start="2023-12-01" duration="1" complete="0" thirdDate="2023-11-13" thirdDate-constraint="0" expand="true"/>
                 </task>
-                <task id="48" name="Entrega del Sistema" color="#8cb6ce" meeting="false" start="2023-11-17" duration="1" complete="0" thirdDate="2023-10-13" thirdDate-constraint="0" expand="true"/>
+                <task id="48" name="Entrega del Sistema" color="#8cb6ce" meeting="false" start="2023-12-01" duration="1" complete="0" thirdDate="2023-10-13" thirdDate-constraint="0" expand="true"/>
             </task>
         </task>
     </tasks>

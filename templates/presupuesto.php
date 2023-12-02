@@ -11,6 +11,7 @@
   <link href="ruta/a/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../public/css/style.css">
   <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 
@@ -29,13 +30,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: #fff;">Informe</a>
+              <a class="nav-link" href="informe_ingresos.php" style="color: #fff;">Informe</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="menu-categorias.php" style="color: #fff;">Categoria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="presupuesto.html" style="color: #fff;">Presupuesto</a>
+              <a class="nav-link" href="presupuesto.php" style="color: #fff;">Presupuesto</a>
             </li>
           </ul>
         </div>
@@ -81,13 +82,14 @@
   <input type="checkbox" id="btn-modal">
   <div class="container-modal">
     <div class="content-modal">
-      Monto:<input type="number"> <br>
-      Categoria:<input type="text"><br>
-      Fecha:<input type="date">
+      <form action="../src/conexion-presupuesto.php" method="post">
+      Monto:<input type="number" name="monto"> <br>
+      <input type="submit" value="Enviar" class="btn-modal">
+      </form>
       
 
       <div class="btn-cerrar">
-        <input type="submit" value="Enviar" class="btn-modal">
+        
         <label for="btn-modal">Cerrar</label>
       </div>
     </div>

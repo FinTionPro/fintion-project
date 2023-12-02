@@ -3,6 +3,9 @@ session_start();
 
 include('config/conexion.php');
 
+// Definir una variable para almacenar el ID del usuario
+$idUsuarioLogueado = null;
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre_usuario = $_POST["usuario"];
     $contrasena = $_POST["contraseña"];
@@ -14,12 +17,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $stmt->get_result();
 
     if ($result->num_rows == 1) {
-        // Las credenciales son válidas, inicia sesión
+        // Las credenciales son válidas, obtén el ID del usuario
         $row = $result->fetch_assoc();
-        $_SESSION["id"] = $row["id"];
-        $_SESSION["nombre_usuario"] = $row["nombre_usuario"];
-        
+        $idUsuarioLogueado = $row["id"];
+
+        // Puedes utilizar $idUsuarioLogueado en otras partes de tu código
+
+        // Redirecciona a la página de inicio
         header("Location: ../templates/home.php");
+        exit();
     } else {
         echo "Credenciales inválidas. Inténtalo de nuevo.";
     }
@@ -28,4 +34,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
     $conn->close();
 }
+
 ?>

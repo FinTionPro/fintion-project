@@ -34,6 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Ejecutar la consulta
     if ($stmt->execute()) {
         echo "Registro agregado correctamente";
+        header("Location: ../templates/menu-categorias.php");
+        exit();
     } else {
         echo "Error al agregar el registro: " . $stmt->error;
     }
